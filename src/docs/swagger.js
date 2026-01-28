@@ -1,14 +1,14 @@
 import swaggerJSDoc from "swagger-jsdoc";
 
-export const swaggerOptions = {
+const options = {
   definition: {
     openapi: "3.0.1",
     info: {
-      title: "API Backend 3",
-      version: "1.0.0"
+      title: "API Backend 3 - Users",
+      description: "Documentación del módulo de usuarios"
     }
   },
   apis: ["./src/routes/*.js"]
 };
 
-export const swaggerSpecs = swaggerJSDoc(swaggerOptions);
+export const swaggerSpecs = swaggerJSDoc(options);

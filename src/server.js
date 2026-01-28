@@ -7,6 +7,6 @@ const PORT = 8080;
 connectMongoDB();
 
 app.listen(PORT, () => {
-  console.log("Servidor escuchando en puerto " + PORT);
+  console.log(`Servidor escuchando en puerto ${PORT}`);
 });
 
